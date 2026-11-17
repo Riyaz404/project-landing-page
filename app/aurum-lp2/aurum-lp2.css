@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+.aurum-lp2 {
+  --gold: #ccaa3e;
+  --gold-bright: #e0c251;
+  background: #000;
+  color: #fff;
+  font-family: Montserrat, Arial, sans-serif;
+}
+
+.aurum-lp2 .site-header {
+  background: linear-gradient(180deg, rgba(0, 0, 0, .8), transparent);
+}
+
+.aurum-lp2 .hero {
+  height: 80vh;
+  min-height: 640px;
+  background: #000;
+}
+
+.aurum-lp2 .hero h1,
+.aurum-lp2 .section-heading h2,
+.aurum-lp2 .gallery-title h2,
+.aurum-lp2 .map-section h2,
+.aurum-lp2 .contact-copy h2,
+.aurum-lp2 .three-d-heading h2 {
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.aurum-lp2 .section-pad {
+  padding-right: max(6%, calc((100% - 1260px) / 2));
+  padding-left: max(6%, calc((100% - 1260px) / 2));
+}
+
+.aurum-lp2 .hero-stats {
+  background: #000;
+}
+
+.aurum-lp2 .stats-band {
+  background: #000;
+}
+
+.aurum-lp2 .stat {
+  min-height: 172px;
+  border-radius: 0;
+}
+
+.aurum-lp2 .about {
+  min-height: 780px;
+  background: linear-gradient(180deg, #000 0%, #ccaa3e 100%);
+  color: #fff;
+}
+
+.aurum-lp2 .about-photo {
+  order: 2;
+  align-self: stretch;
+}
+
+.aurum-lp2 .about-photo img {
+  height: clamp(520px, 54vw, 830px);
+  border-radius: 28px;
+  filter: none;
+}
+
+.aurum-lp2 .about-copy {
+  order: 1;
+}
+
+.aurum-lp2 .reasons,
+.aurum-lp2 .map-section,
+.aurum-lp2 .footer {
+  background-color: #000;
+}
+
+.aurum-lp2 .gallery {
+  background: #ccaa3e;
+  color: #111;
+}
+
+.aurum-lp2 .gallery .section-kicker,
+.aurum-lp2 .gallery .gallery-controls span,
+.aurum-lp2 .gallery .gallery-caption span {
+  color: #111;
+}
+
+.aurum-lp2 .gallery-controls button {
+  border-color: rgba(0, 0, 0, .38);
+  color: #111;
+}
+
+.aurum-lp2 .gallery-controls button:hover {
+  border-color: #111;
+  color: #111;
+}
+
+.aurum-lp2 .gallery-thumbs button {
+  color: #302714;
+}
+
+.aurum-lp2 .gallery-thumbs button.active {
+  color: #111;
+  border-color: #111;
+}
+
+.aurum-lp2 .contact {
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, .93), rgba(0, 0, 0, .72)),
+    url('/aurum-lp2/AURUM-Sree-Varaha-Group-Project-View.jpg') center / cover;
+}
+
+.aurum-lp2 .enquiry-form {
+  background: rgba(10, 10, 9, .88);
+  backdrop-filter: blur(8px);
+}
+
+.aurum-lp2 .map-section {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: auto auto auto minmax(360px, auto);
+  gap: 12px 24px;
+}
+
+.aurum-lp2 .map-copy {
+  display: contents;
+}
+
+.aurum-lp2 .map-copy > .section-kicker,
+.aurum-lp2 .map-copy > h2,
+.aurum-lp2 .map-copy > .map-intro {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.aurum-lp2 .map-copy > .section-kicker {
+  grid-row: 1;
+}
+
+.aurum-lp2 .map-copy > h2 {
+  grid-row: 2;
+}
+
+.aurum-lp2 .map-copy > h2 br {
+  display: none;
+}
+
+.aurum-lp2 .map-copy > .map-intro {
+  grid-row: 3;
+  max-width: 860px;
+  margin: 0 auto 18px;
+}
+
+.aurum-lp2 .nearby-list {
+  grid-column: 2;
+  grid-row: 4;
+  align-self: start;
+}
+
+.aurum-lp2 .google-map {
+  grid-column: 1;
+  grid-row: 4;
+  height: 520px;
+}
+
+@media (max-width: 640px) {
+  .aurum-lp2 .hero {
+    min-height: 640px;
+  }
+
+  .aurum-lp2 .about {
+    min-height: 0;
+  }
+
+  .aurum-lp2 .about-photo {
+    order: 1;
+  }
+
+  .aurum-lp2 .about-copy {
+    order: 2;
+  }
+
+  .aurum-lp2 .about-photo img {
+    height: 390px;
+  }
+
+  .aurum-lp2 .map-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto 360px auto;
+  }
+
+  .aurum-lp2 .map-copy > .section-kicker,
+  .aurum-lp2 .map-copy > h2,
+  .aurum-lp2 .map-copy > .map-intro,
+  .aurum-lp2 .nearby-list,
+  .aurum-lp2 .google-map {
+    grid-column: 1;
+  }
+
+  .aurum-lp2 .map-copy > .section-kicker {
+    grid-row: 1;
+  }
+
+  .aurum-lp2 .map-copy > h2 {
+    grid-row: 2;
+  }
+
+  .aurum-lp2 .map-copy > .map-intro {
+    grid-row: 3;
+  }
+
+  .aurum-lp2 .google-map {
+    grid-row: 4;
+    height: 360px;
+  }
+
+  .aurum-lp2 .nearby-list {
+    grid-row: 5;
+  }
+}
