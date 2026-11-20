@@ -10,13 +10,11 @@ const structuredData = {
       name: 'Sree Varaaha Group',
       url: SITE_URL,
       logo: `${SITE_URL}/company-icon.svg`,
-      email: 'sales@sreevaraahagroup.com',
       contactPoint: [
         {
           '@type': 'ContactPoint',
           contactType: 'sales',
           telephone: '+91 9177445222',
-          email: 'sales@sreevaraahagroup.com',
           areaServed: 'IN',
           availableLanguage: 'English',
         },
