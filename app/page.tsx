@@ -1,4 +1,5 @@
 import { AurumLanding } from '@/components/aurum-landing'
+import { AURUM_PHONE_DISPLAY, AURUM_SECONDARY_PHONE_DISPLAY } from '@/lib/aurum-contact'
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from '@/lib/site-seo'
 
 const structuredData = {
@@ -14,14 +15,14 @@ const structuredData = {
         {
           '@type': 'ContactPoint',
           contactType: 'sales',
-          telephone: '+91 9177445222',
+          telephone: AURUM_PHONE_DISPLAY,
           areaServed: 'IN',
           availableLanguage: 'English',
         },
         {
           '@type': 'ContactPoint',
           contactType: 'sales',
-          telephone: '+91 9642344222',
+          telephone: AURUM_SECONDARY_PHONE_DISPLAY,
           areaServed: 'IN',
           availableLanguage: 'English',
         },
